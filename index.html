@@ -365,24 +365,12 @@
           </div>
         </div>
 
-        <form class="contact-form reveal">
-          <div class="form-group">
-            <input type="text" placeholder="Full Name" required />
-          </div>
-
-          <div class="form-group">
-            <input type="email" placeholder="Email Address" required />
-          </div>
-
-          <div class="form-group">
-            <input type="text" placeholder="Phone Number" />
-          </div>
-
-          <div class="form-group">
-            <textarea rows="6" placeholder="Your Message" required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        <form class="contact-form" action="https://formspree.io/f/mojyvpyn" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <input type="email" name="email" placeholder="Email Address" required />
+          <textarea name="message" rows="5" placeholder="Write your message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
       </div>
     </section>
