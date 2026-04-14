@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gorick Group Company Limited</title>
+  <meta
+    name="description"
+    content="Gorick Group Company Limited is a private limited company in Tanzania providing civil, electrical, and mechanical engineering services."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">
+        <img src="images/gorick-logo.png" alt="Gorick Group Logo" class="logo" />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#vision-mission">Vision & Mission</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-btn">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-slides">
+        <div class="hero-slide active" style="background-image: linear-gradient(90deg, rgba(7, 20, 74, 0.9) 0%, rgba(7, 20, 74, 0.78) 42%, rgba(7, 20, 74, 0.12) 100%), url('images/hero-bg.jpg');"></div>
+        <div class="hero-slide" style="background-image: linear-gradient(90deg, rgba(7, 20, 74, 0.9) 0%, rgba(7, 20, 74, 0.78) 42%, rgba(7, 20, 74, 0.12) 100%), url('images/service-electrical.jpg');"></div>
+        <div class="hero-slide" style="background-image: linear-gradient(90deg, rgba(7, 20, 74, 0.9) 0%, rgba(7, 20, 74, 0.78) 42%, rgba(7, 20, 74, 0.12) 100%), url('images/service-civil.jpg');"></div>
+        <div class="hero-slide" style="background-image: linear-gradient(90deg, rgba(7, 20, 74, 0.9) 0%, rgba(7, 20, 74, 0.78) 42%, rgba(7, 20, 74, 0.12) 100%), url('images/service-mechanical.jpg');"></div>
+        <div class="hero-slide" style="background-image: linear-gradient(90deg, rgba(7, 20, 74, 0.9) 0%, rgba(7, 20, 74, 0.78) 42%, rgba(7, 20, 74, 0.12) 100%), url('images/project-site.jpg');"></div>
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <button class="hero-arrow hero-arrow-left" id="prevSlide" aria-label="Previous slide">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <button class="hero-arrow hero-arrow-right" id="nextSlide" aria-label="Next slide">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <h1>
+            BUILDING TOMORROW’S
+            <br />
+            INFRASTRUCTURE <span>TODAY</span>
+          </h1>
+
+          <div class="hero-line"></div>
+
+          <p class="hero-text">
+            Expert engineering solutions in electrical, civil, and mechanical
+            fields, delivering quality and reliability.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">Our Services</a>
+            <a href="#contact" class="btn btn-secondary">Contact Us</a>
+          </div>
+
+          <div class="hero-contact-row">
+            <div class="hero-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>Call Us: 0759126626</span>
+            </div>
+
+            <div class="hero-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@goricgroup.co.tz</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-dots" id="heroDots">
+        <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+        <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+        <button class="hero-dot" data-slide="3" aria-label="Slide 4"></button>
+        <button class="hero-dot" data-slide="4" aria-label="Slide 5"></button>
+      </div>
+
+      <div class="hero-bottom-bar">
+        <div class="container hero-bottom-content">
+          <div class="hero-bottom-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Kakola, Kahama-Shinyanga</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <p class="section-label">About Us</p>
+          <h2>Gorick Group Company Limited</h2>
+          <p>
+            Gorick Group Company Limited is a private limited company incorporated
+            in the United Republic of Tanzania to operate the business areas of
+            civil, electrical, and mechanical engineering.
+          </p>
+          <p>
+            We are committed to deliver practical, dependable, and professional
+            engineering services with a strong focus on quality, safety,
+            innovation, and long-term value for our clients.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-box reveal">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <h3>Safety First</h3>
+                <p>We prioritize safe work practices in every project.</p>
+              </div>
+            </div>
+
+            <div class="feature-box reveal">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <h3>Quality Work</h3>
+                <p>We focus on durable, professional, and efficient results.</p>
+              </div>
+            </div>
+
+            <div class="feature-box reveal">
+              <i class="fa-solid fa-users"></i>
+              <div>
+                <h3>Skilled Team</h3>
+                <p>Our engineers bring practical knowledge across key fields.</p>
+              </div>
+            </div>
+
+            <div class="feature-box reveal">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <h3>Timely Delivery</h3>
+                <p>We work with discipline to complete tasks on schedule.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image reveal">
+          <img src="images/project-site.jpg" alt="Engineering project site" />
+        </div>
+      </div>
+    </section>
+
+    <section class="vision-mission section" id="vision-mission">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">Our Direction</p>
+          <h2>Vision And Mission That Drive Excellence</h2>
+        </div>
+
+        <div class="vm-grid">
+          <article class="vm-card reveal">
+            <div class="vm-icon">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <h3>Our Vision</h3>
+            <p>
+              Gorick has a clear vision of becoming the best engineering company
+              in the area of civil, electrical and mechanical within the country.
+            </p>
+          </article>
+
+          <article class="vm-card reveal">
+            <div class="vm-icon">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3>Our Mission</h3>
+            <p>
+              To create, disseminate, and integrate knowledge of engineering,
+              science, and technology that expands the civil, electrical, and
+              mechanical engineering knowledge base, which in turn enables the
+              betterment of human society.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">Our Services</p>
+          <h2>Professional Services Across Major Engineering Fields</h2>
+          <p class="section-description">
+            We provide a wide range of engineering services to meet your needs.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-image">
+              <img src="images/service-electrical.jpg" alt="Electrical Engineering" />
+            </div>
+            <div class="service-icon">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3>Electrical Engineering</h3>
+            <p>
+              PLC programming and human machine interface design, pneumatic and
+              hydraulic on-site field wiring checkouts, development of electrical
+              schematic, production and standby support, control panel design,
+              customer training, modular design, field wiring drawings,
+              electrical design through installation, on-site testing and
+              commissioning, and control system design and architecture.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-image">
+              <img src="images/service-civil.jpg" alt="Civil Engineering" />
+            </div>
+            <div class="service-icon">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            <h3>Civil Engineering</h3>
+            <p>
+              Design services for infrastructure projects, roads, railways,
+              water supply, sewerage systems, water treatment plants,
+              hydroelectric power plants, dams, structural design,
+              supervision, inspection, project control, construction services,
+              testing services, maintenance of completed projects, and scientific
+              research in civil engineering.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-image">
+              <img src="images/service-mechanical.jpg" alt="Mechanical Engineering" />
+            </div>
+            <div class="service-icon">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <h3>Mechanical Engineering</h3>
+            <p>
+              Assessing project requirements, measuring the performance of
+              mechanical components, devices, and engines, maintaining and
+              modifying equipment to ensure that it is safe, reliable, and
+              efficient, testing, evaluating, modifying, and retesting
+              products, and providing technical advice.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-band section" id="projects">
+      <div class="container projects-band-grid">
+        <div class="projects-band-text reveal">
+          <p class="section-label section-label-light">Our Projects</p>
+          <h2>Engineering Work That Reflects Precision And Professionalism</h2>
+          <p>
+            We deliver engineering support across industrial, construction, and
+            infrastructure environments through planning, technical skill, and
+            disciplined execution.
+          </p>
+        </div>
+
+        <div class="projects-band-image reveal">
+          <img src="images/project-site.jpg" alt="Project site" />
+        </div>
+      </div>
+    </section>
+
+    <section class="team section">
+      <div class="container team-grid">
+        <div class="team-image reveal">
+          <img src="images/team.jpg" alt="Gorick engineering team" />
+        </div>
+
+        <div class="team-text reveal">
+          <p class="section-label">Our Team</p>
+          <h2>A Professional Team You Can Trust</h2>
+          <p>
+            Our engineers work together across electrical, civil, and mechanical
+            disciplines to provide dependable solutions, strong site coordination,
+            and client-focused service.
+          </p>
+
+          <div class="team-stats">
+            <div class="stat-box reveal">
+              <h3>3</h3>
+              <p>Core Engineering Fields</p>
+            </div>
+            <div class="stat-box reveal">
+              <h3>100%</h3>
+              <p>Commitment To Quality</p>
+            </div>
+            <div class="stat-box reveal">
+              <h3>24/7</h3>
+              <p>Support Mindset</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="section-label">Contact Us</p>
+          <h2>Let’s Discuss Your Engineering Project</h2>
+          <p>
+            Reach out to Gorick Group Company Limited for professional support
+            in electrical, civil, and mechanical engineering services.
+          </p>
+
+          <div class="contact-list">
+            <div class="contact-item reveal">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Kakola, Kahama-Shinyanga</p>
+              </div>
+            </div>
+
+            <div class="contact-item reveal">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>0759126626</p>
+              </div>
+            </div>
+
+            <div class="contact-item reveal">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>info@goricgroup.co.tz</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required />
+          </div>
+
+          <div class="form-group">
+            <input type="text" placeholder="Phone Number" />
+          </div>
+
+          <div class="form-group">
+            <textarea rows="6" placeholder="Your Message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="images/gorick-logo.png" alt="Gorick Group Logo" class="footer-logo" />
+        <p>
+          Gorick Group Company Limited delivers professional engineering
+          solutions in electrical, civil, and mechanical fields.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#vision-mission">Vision & Mission</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-links">
+          <li>Kakola, Kahama-Shinyanga</li>
+          <li>0759126626</li>
+          <li>info@goricgroup.co.tz</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gorick Group Company Limited. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
